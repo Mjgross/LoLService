@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeagueService", "LeagueService\LeagueService.csproj", "{6B6CB0E5-C880-4106-AF5D-5DB43CC7DC4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetUser", "GetUser\GetUser.csproj", "{EC157CD7-7F47-4793-9BED-10DB2AFA82F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetChamps", "GetChamps\GetChamps.csproj", "{97544938-B7F8-491A-A55E-D31A963B8EB5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B6CB0E5-C880-4106-AF5D-5DB43CC7DC4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B6CB0E5-C880-4106-AF5D-5DB43CC7DC4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B6CB0E5-C880-4106-AF5D-5DB43CC7DC4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B6CB0E5-C880-4106-AF5D-5DB43CC7DC4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC157CD7-7F47-4793-9BED-10DB2AFA82F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC157CD7-7F47-4793-9BED-10DB2AFA82F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC157CD7-7F47-4793-9BED-10DB2AFA82F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC157CD7-7F47-4793-9BED-10DB2AFA82F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97544938-B7F8-491A-A55E-D31A963B8EB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97544938-B7F8-491A-A55E-D31A963B8EB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97544938-B7F8-491A-A55E-D31A963B8EB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97544938-B7F8-491A-A55E-D31A963B8EB5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
