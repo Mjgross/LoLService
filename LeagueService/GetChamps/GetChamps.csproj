@@ -108,7 +108,10 @@
     <Compile Include="Champ.cs" />
     <Compile Include="ChampList.cs" />
     <Compile Include="lists.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="MasteryPages.cs" />
     <Compile Include="Request.cs" />
+    <Compile Include="RunePages.cs" />
     <Compile Include="Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>
     </Compile>

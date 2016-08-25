@@ -12,7 +12,7 @@ namespace GetChamps
         public const string root = "https://na.api.pvp.net/api/lol/na";
 
         //Access Links for all of the APIs
-        public const string api_key ="?api_key=RGAPI-F8054BA6-CF6D-4C86-990E-ED29A8836C37";
+        public const string api_key ="";
 
         //stats links
         public const string rankedURL = "/v1.3/stats/by-summoner/{0}/ranked";
@@ -22,7 +22,7 @@ namespace GetChamps
 
         public const string summonerNameURL = "/v1.4/summoner/by-name/{0}";
 
-        public const string summonerMasteryURL = "/v1.4/summoner/by-name/{0}";
+        public const string summonerMasteryURL = "/v1.4/summoner/{0}/masteries";
 
         public const string summonerRunesURL = "/v1.4/summoner/{0}/runes";
 

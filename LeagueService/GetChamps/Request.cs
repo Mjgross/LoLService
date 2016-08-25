@@ -9,6 +9,7 @@ namespace GetChamps
 {
     public class Request
     {
+        //Grabs and Processes the request
         public string getRequest(string path)
         {
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(path);
@@ -23,6 +24,16 @@ namespace GetChamps
             responseStream.Close();
 
             return res;
+        }
+
+        //Grabs API URL
+        public string requester(string url)
+        {
+
+            var request = new Request();
+
+            string data = request.getRequest(url);
+            return data;
         }
 
     }

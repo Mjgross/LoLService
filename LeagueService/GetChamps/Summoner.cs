@@ -24,10 +24,7 @@ namespace GetChamps
 
     public class SummonerList
     {
-        public string userName ="";
 
-
-        [JsonProperty(PropertyName = userName)]
         public Summoner Summoner { get; set; }
 
     }
