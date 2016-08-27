@@ -18,14 +18,14 @@ namespace GetChamps
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class Service1 : IService1
     {
-        private string reqData; //erase later
 
-        public string update(string username)
+        public List<string> update(string username)
         {
             Main setup = new Main();
-            setup.Controller(username);
+            List<string> list = new List<string>();
+            list = setup.Controller(username);
 
-            return reqData;
+            return list;
         }
 
     }

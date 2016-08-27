@@ -1,0 +1,11 @@
+C:\Users\Matt\Documents\LeagueAPI\LeagueService\LeagueForm\bin\Debug\LeagueForm.exe.config
+C:\Users\Matt\Documents\LeagueAPI\LeagueService\LeagueForm\bin\Debug\LeagueForm.exe
+C:\Users\Matt\Documents\LeagueAPI\LeagueService\LeagueForm\bin\Debug\LeagueForm.pdb
+C:\Users\Matt\Documents\LeagueAPI\LeagueService\LeagueForm\obj\Debug\LeagueForm.csprojResolveAssemblyReference.cache
+C:\Users\Matt\Documents\LeagueAPI\LeagueService\LeagueForm\obj\Debug\LeagueForm.Form1.resources
+C:\Users\Matt\Documents\LeagueAPI\LeagueService\LeagueForm\obj\Debug\LeagueForm.Properties.Resources.resources
+C:\Users\Matt\Documents\LeagueAPI\LeagueService\LeagueForm\obj\Debug\LeagueForm.csproj.GenerateResource.Cache
+C:\Users\Matt\Documents\LeagueAPI\LeagueService\LeagueForm\obj\Debug\LeagueForm.exe
+C:\Users\Matt\Documents\LeagueAPI\LeagueService\LeagueForm\obj\Debug\LeagueForm.pdb
+C:\Users\Matt\Documents\LeagueAPI\LeagueService\LeagueForm\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Matt\Documents\LeagueAPI\LeagueService\LeagueForm\bin\Debug\Newtonsoft.Json.xml

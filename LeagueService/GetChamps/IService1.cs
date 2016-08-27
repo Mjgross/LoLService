@@ -16,11 +16,17 @@ namespace GetChamps
         [OperationContract]
         [WebGet(ResponseFormat = WebMessageFormat.Json,
             UriTemplate = "/update/{name}")]
-        string update(string username);
+        List<string> update(string username);
         // TODO: Add your service operations here
     }
 
+    [DataContract]
+    public class SummonerData
+    {
+        [DataMember]
+        List<string>summonerData { get; set; }
+        
 
-    // Use a data contract as illustrated in the sample below to add composite types to service operations.
+    }
 
 }
