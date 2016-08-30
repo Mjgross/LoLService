@@ -12,6 +12,7 @@ namespace GetChamps
         //Grabs and Processes the request
         public string getRequest(string path)
         {
+
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(path);
             request.Method = "Get";
             request.Accept = "*/*";

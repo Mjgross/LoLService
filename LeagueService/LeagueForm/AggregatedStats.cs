@@ -13,6 +13,9 @@ namespace LeagueForm
         [JsonProperty("killingSpree")]
         public int killingSpree { get; set; }
 
+        [JsonProperty("totalChampionKills")]
+        public int totalChampionKills { get; set; }
+
         [JsonProperty("maxLargestKillingSpree")]
         public int maxLargestKillingSpree { get; set; }
 
@@ -30,6 +33,7 @@ namespace LeagueForm
 
         [JsonProperty("rankedPremadeGamesPlayed")]
         public int rankedPremadeGamesPlayed { get; set; }
+
 
         [JsonProperty("rankedSoloGamesPlayed")]
         public int rankedSoloGamesPlayed { get; set; }
@@ -82,6 +86,9 @@ namespace LeagueForm
         [JsonProperty("totalSessionsWon")]
         public int totalSessionsWon { get; set; }
 
+        [JsonProperty("totalSessionsLost")]
+        public int totalSessionsLost { get; set; }
+
         [JsonProperty("totalTripleKills")]
         public int totalTripleKills { get; set; }
 
@@ -90,5 +97,8 @@ namespace LeagueForm
 
         [JsonProperty("totalUnrealKills")]
         public int totalUnrealKills { get; set; }
+
+        [JsonProperty("maxNumDeaths")]
+        public int maxNumDeaths { get; set; }
     }
 }

@@ -13,7 +13,7 @@ namespace GetChamps
         {
             List<string> list = new List<string>();
             //sets class username for data gathering
-            this.username = username;
+            this.username = username.Replace(" ", "");
             //Grab all Summoner Information
             list = GrabSummonerInfo(list);
             return list;
@@ -21,17 +21,6 @@ namespace GetChamps
         
         private List<string> GrabSummonerInfo(List<string> list)
         {
-            //Grabs essential summoner data
-            //string summon = getSummoner(username);
-            // var summonData = JsonConvert.DeserializeObject<Dictionary<string, Summoner>>(summon);
-            //grabs masteries
-            //string summonM = getMastery(summonData.First().Value.id);
-            //var summonMastery = JsonConvert.DeserializeObject<Dictionary<string,MasteryPages>>(summonM);
-
-            //grabs runes
-            //string summonR = getRunes(summonData.First().Value.id);
-            //var summonRunes = JsonConvert.DeserializeObject<Dictionary<string, RunePages>>(summonR);
-
             //Summoner ID for adding to list
             string summon = getSummoner(username);
             var summonData = JsonConvert.DeserializeObject<Dictionary<string, Summoner>>(summon);
