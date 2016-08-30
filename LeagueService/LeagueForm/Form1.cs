@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using LeagueForm.ServiceReference1;
 using Newtonsoft.Json;
+using System.Drawing.Drawing2D;
 namespace LeagueForm
 {
     public partial class Form1 : Form
@@ -21,6 +22,7 @@ namespace LeagueForm
         {
             InitializeComponent();
         }
+
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -59,7 +61,7 @@ namespace LeagueForm
             //Sum Rank
             label2.Text = "rank: " + summonData.First().Value.summonerLevel;
             //summon Icon
-            string iconURL = String.Format(summonData.First().Value.iconURL, summonData.First().Value.name);
+            string iconURL = String.Format(summonData.First().Value.iconURL, summonData.First().Value.name.Replace(" ", ""));
             pictureBox1.Load(iconURL);
         }
         private void pictureBox1_Click(object sender, EventArgs e)
