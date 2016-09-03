@@ -44,7 +44,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
             this.leftKDA = new System.Windows.Forms.Label();
             this.rightKDA = new System.Windows.Forms.Label();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -52,6 +51,7 @@
             this.rightKDAcolor = new System.Windows.Forms.RichTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.champBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -178,16 +178,6 @@
             this.pictureBox3.TabIndex = 14;
             this.pictureBox3.TabStop = false;
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(430, 266);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 15;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
             // leftKDA
             // 
             this.leftKDA.AutoSize = true;
@@ -290,6 +280,149 @@
             this.label6.TabIndex = 28;
             this.label6.Text = "KDA :";
             // 
+            // champBox1
+            // 
+            this.champBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.champBox1.FormattingEnabled = true;
+            this.champBox1.Items.AddRange(new object[] {
+            "Aatrox",
+            "Ahri",
+            "Akali",
+            "Alistar",
+            "Amumu",
+            "Anivia",
+            "Annie",
+            "Ashe",
+            "Aurelion Sol",
+            "Azir",
+            "Bard",
+            "Blitzcrank",
+            "Brand",
+            "Braum",
+            "Caitlyn",
+            "Cassiopeia",
+            "Cho\'Gath",
+            "Corki",
+            "Darius",
+            "Diana",
+            "Dr. Mundo",
+            "Draven",
+            "Ekko",
+            "Elise",
+            "Evelynn",
+            "Ezreal",
+            "Fiddlesticks",
+            "Fiora",
+            "Fizz",
+            "Galio",
+            "Gangplank",
+            "Garen",
+            "Gnar",
+            "Gragas",
+            "Graves",
+            "Hecarim",
+            "Heimerdinger",
+            "Illaoi",
+            "Irelia",
+            "Janna",
+            "Jarvan IV",
+            "Jax",
+            "Jayce",
+            "Jhin",
+            "Jinx",
+            "Kalista",
+            "Karma",
+            "Karthus",
+            "Kassadin",
+            "Katarina",
+            "Kayle",
+            "Kennen",
+            "Kha\'Zix",
+            "Kindred",
+            "Kled",
+            "Kog\'Maw",
+            "LeBlanc",
+            "Lee Sin",
+            "Leona",
+            "Lissandra",
+            "Lucian",
+            "Lulu",
+            "Lux",
+            "Malphite",
+            "Malzahar",
+            "Maokai",
+            "Master Yi",
+            "Miss Fortune",
+            "Mordekaiser",
+            "Morgana",
+            "Nami",
+            "Nasus",
+            "Nautilus",
+            "Nidalee",
+            "Nocturne",
+            "Nunu",
+            "Olaf",
+            "Orianna",
+            "Pantheon",
+            "Poppy",
+            "Quinn",
+            "Rammus",
+            "Rek\'Sai",
+            "Renekton",
+            "Rengar",
+            "Riven",
+            "Rumble",
+            "Ryze",
+            "Sejuani",
+            "Shaco",
+            "Shen",
+            "Shyvana",
+            "Singed",
+            "Sion",
+            "Sivir",
+            "Skarner",
+            "Sona",
+            "Soraka",
+            "Swain",
+            "Syndra",
+            "Tahm Kench",
+            "Taliyah",
+            "Talon",
+            "Taric",
+            "Teemo",
+            "Thresh",
+            "Tristana",
+            "Trundle",
+            "Tryndamere",
+            "Twisted Fate",
+            "Twitch",
+            "Udyr",
+            "Urgot",
+            "Varus",
+            "Vayne",
+            "Veigar",
+            "Vel\'Koz",
+            "Vi",
+            "Viktor",
+            "Vladimir",
+            "Volibear",
+            "Warwick",
+            "Wukong",
+            "Xerath",
+            "Xin Zhao",
+            "Yasuo",
+            "Yorick",
+            "Zac",
+            "Zed",
+            "Ziggs",
+            "Zilean",
+            "Zyra"});
+            this.champBox1.Location = new System.Drawing.Point(291, 239);
+            this.champBox1.Name = "champBox1";
+            this.champBox1.Size = new System.Drawing.Size(121, 21);
+            this.champBox1.TabIndex = 29;
+            this.champBox1.SelectedIndexChanged += new System.EventHandler(this.champBox1_SelectedIndexChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -298,6 +431,7 @@
             this.BackgroundImage = global::LeagueForm.Properties.Resources.bg4;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(824, 801);
+            this.Controls.Add(this.champBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.rightKDAcolor);
@@ -305,7 +439,6 @@
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.rightKDA);
             this.Controls.Add(this.leftKDA);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label3);
@@ -345,7 +478,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label leftKDA;
         private System.Windows.Forms.Label rightKDA;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
@@ -353,6 +485,7 @@
         private System.Windows.Forms.RichTextBox rightKDAcolor;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox champBox1;
     }
 }
 

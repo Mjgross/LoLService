@@ -112,31 +112,10 @@ namespace LeagueForm
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(textBox3.Text.ToString()))
-            {
-                string champ = textBox3.Text.ToString();
-                champ = champ.First().ToString().ToUpper() + champ.Substring(1);
-
-                updateChamp(champ);
-            }
+ 
         }
 
-        private void updateChamp(string champ)
-        {
-            if(champ.Equals("wukong", StringComparison.InvariantCultureIgnoreCase))
-            {
-                champ = "MonkeyKing";
-            }
-            string url = "http://ddragon.leagueoflegends.com/cdn/5.2.1/img/champion/" + champ + ".png";
-            pictureBox3.Load(url); //CAPS MATTERS
-            //wukong = MoneyKing
-            int champId = (int)Enum.Parse(typeof(Champions.ChampID), champ);
 
-            grabChampInfo(sum, champId, 1); //summoner 1
-            grabChampInfo(sum2, champId, 2); //summoner2
-
-
-        }
         private void grabChampInfo(List<string> summ, int id, int summm)
         {
             int idNum = 0 ;
@@ -230,5 +209,26 @@ namespace LeagueForm
             //update champ 2
         }
 
+        private void champBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string champ = (champBox1.SelectedItem.ToString()).Replace(" ", "");
+            if (champ.Equals("wukong", StringComparison.InvariantCultureIgnoreCase))
+            {
+                champ = "MonkeyKing";
+            }
+            string url = "http://ddragon.leagueoflegends.com/cdn/5.2.1/img/champion/" + champ + ".png";
+            pictureBox3.Load(url); //CAPS MATTERS
+            //wukong = MoneyKing
+            int champId = (int)Enum.Parse(typeof(Champions.ChampID), champ);
+            try {
+                grabChampInfo(sum, champId, 1); //summoner 1
+                grabChampInfo(sum2, champId, 2); //summoner2
+            }
+            catch
+            {
+                MessageBox.Show("Error: Summoner Data not found.");
+            }
+
+        }
     }
 }
