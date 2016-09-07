@@ -81,5 +81,62 @@ namespace LeagueForm
     {
         [JsonProperty("assists")]
         public int assists { get; set; }
+
+        [JsonProperty("barracksKilled")]
+        public int barracksKilled { get; set; }
+
+        [JsonProperty("bountyLevel")]
+        public int bountylevel { get; set; }
+
+        [JsonProperty("championsKilled")]
+        public int championsKilled { get; set; }
+
+        [JsonProperty("combatPlayerScore")]
+        public int combatPlayerscore { get; set; }
+
+        [JsonProperty("consumablesPurchased")]
+        public int consumablesPurchased { get; set; }
+
+        [JsonProperty("damageDealtPlayer")]
+        public int damageDealtPlayer { get; set; }
+
+        [JsonProperty("doubleKills")]
+        public int doubleKills { get; set; }
+
+        [JsonProperty("firstBlood")]
+        public int firstBlood { get; set; }
+
+        [JsonProperty("gold")]
+        public int gold { get; set; }
+
+        [JsonProperty("goldEarned")]
+        public int goldEarned { get; set; }
+
+        [JsonProperty("goldSpent")]
+        public int goldSpent { get; set; }
+
+        [JsonProperty("item0")]
+        public int item0 { get; set; }
+
+        [JsonProperty("item1")]
+        public int item1 { get; set; }
+
+        [JsonProperty("item2")]
+        public int item2 { get; set; }
+
+        [JsonProperty("item3")]
+        public int item3 { get; set; }
+
+        [JsonProperty("item4")]
+        public int item4 { get; set; }
+
+        [JsonProperty("item5")]
+        public int item5 { get; set; }
+
+        [JsonProperty("item6")]
+        public int item6 { get; set; }
+
+        [JsonProperty("itemsPurchased")]
+        public int itemsPurchased{ get; set; }
     }
 }

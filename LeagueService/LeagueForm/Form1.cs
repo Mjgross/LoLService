@@ -150,7 +150,7 @@ namespace LeagueForm
                 double champ_DEATHS_AVG     =       (champ_DEATHS / champ_PLAYED);
                 double champ_KDA = Math.Round((champ_KILLS_AVG + champ_ASSIST_AVG) / champ_DEATHS_AVG, 1);
 
-                leftKDA.Text = champ_KDA.ToString();
+                leftKDA.Text = "avg KDA: " + champ_KDA.ToString();
                 string champ_DEATHS_AVG_col = champ_DEATHS_AVG.ToString("#.##");
 
                 leftKDAcolor.Text = champ_KILLS_AVG.ToString("#.##") + " / " + champ_DEATHS_AVG_col + " / " + champ_ASSIST_AVG.ToString("#.##");
@@ -162,7 +162,7 @@ namespace LeagueForm
 
 
                 graph1(summ, idNum, 1);
-
+                recentGame(summ, idNum, 1);
             }
 
             //SUMMONER 2
@@ -188,7 +188,7 @@ namespace LeagueForm
                     double champ_DEATHS_AVG2 = (champ_DEATHS2 / champ_PLAYED2);
                     double champ_KDA2 = Math.Round((champ_KILLS_AVG2 + champ_ASSIST_AVG2) / champ_DEATHS_AVG2, 1);
 
-                    rightKDA.Text = champ_KDA2.ToString();
+                    rightKDA.Text = "avg KDA: " + champ_KDA2.ToString();
                     string champ_DEATHS_AVG_col2 = champ_DEATHS_AVG2.ToString("#.##");
 
                     rightKDAcolor.Text = champ_KILLS_AVG2.ToString("#.##") + " / " + champ_DEATHS_AVG_col2 + " / " + champ_ASSIST_AVG2.ToString("#.##");
@@ -215,6 +215,10 @@ namespace LeagueForm
             //update champ 2
         }
 
+        private void recentGame(List<string> summ, int champID, int sumNum)
+        {
+            var champ = JsonConvert.DeserializeObject<Ranked>(summ[4]);
+        }
         private void champBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             string champ = (champBox1.SelectedItem.ToString()).Replace(" ", "");

@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -74,7 +74,7 @@
             // 
             this.textBox2.BackColor = System.Drawing.Color.PowderBlue;
             this.textBox2.Font = new System.Drawing.Font("Friz Quadrata Std", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(605, 95);
+            this.textBox2.Location = new System.Drawing.Point(845, 97);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(207, 27);
             this.textBox2.TabIndex = 1;
@@ -97,7 +97,7 @@
             this.button1.FlatAppearance.BorderSize = 15;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(230, 95);
+            this.button1.Location = new System.Drawing.Point(321, 92);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(142, 40);
             this.button1.TabIndex = 4;
@@ -108,7 +108,7 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Location = new System.Drawing.Point(684, 159);
+            this.pictureBox2.Location = new System.Drawing.Point(920, 159);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(128, 128);
             this.pictureBox2.TabIndex = 5;
@@ -117,7 +117,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(448, 97);
+            this.button2.Location = new System.Drawing.Point(588, 92);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(142, 40);
             this.button2.TabIndex = 8;
@@ -131,9 +131,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("FrizQuadrata BT", 32.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(146, 159);
+            this.label1.Location = new System.Drawing.Point(171, 159);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(245, 71);
+            this.label1.Size = new System.Drawing.Size(289, 71);
             this.label1.TabIndex = 9;
             this.label1.Text = "label1";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -157,7 +157,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("FrizQuadrata BT", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(679, 262);
+            this.label3.Location = new System.Drawing.Point(915, 262);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(68, 25);
             this.label3.TabIndex = 12;
@@ -171,23 +171,23 @@
             this.label4.Font = new System.Drawing.Font("FrizQuadrata BT", 32.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.label4.Location = new System.Drawing.Point(397, 159);
+            this.label4.Location = new System.Drawing.Point(609, 159);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(281, 71);
+            this.label4.Size = new System.Drawing.Size(288, 71);
             this.label4.TabIndex = 11;
             this.label4.Text = "label4";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(353, 266);
+            this.textBox3.Location = new System.Drawing.Point(476, 195);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 13;
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(343, 327);
+            this.pictureBox3.Location = new System.Drawing.Point(467, 242);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(120, 120);
             this.pictureBox3.TabIndex = 14;
@@ -215,30 +215,30 @@
             // chart1
             // 
             this.chart1.BackColor = System.Drawing.Color.Transparent;
-            chartArea2.AxisX.IsLabelAutoFit = false;
-            chartArea2.AxisX.LabelStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea2.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea2.AxisX.LineColor = System.Drawing.Color.White;
-            chartArea2.AxisY.IsLabelAutoFit = false;
-            chartArea2.AxisY.LabelStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            chartArea2.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea2.BackColor = System.Drawing.Color.DimGray;
-            chartArea2.Name = "Summoner1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
-            this.chart1.Location = new System.Drawing.Point(154, 576);
+            chartArea1.AxisX.IsLabelAutoFit = false;
+            chartArea1.AxisX.LabelStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea1.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea1.AxisX.LineColor = System.Drawing.Color.White;
+            chartArea1.AxisY.IsLabelAutoFit = false;
+            chartArea1.AxisY.LabelStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea1.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea1.BackColor = System.Drawing.Color.DimGray;
+            chartArea1.Name = "Summoner1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(274, 563);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series3.ChartArea = "Summoner1";
-            series3.LabelForeColor = System.Drawing.Color.White;
-            series3.Legend = "Legend1";
-            series3.Name = "Summoner1";
-            series4.ChartArea = "Summoner1";
-            series4.Legend = "Legend1";
-            series4.Name = "Summoner2";
-            this.chart1.Series.Add(series3);
-            this.chart1.Series.Add(series4);
+            series1.ChartArea = "Summoner1";
+            series1.LabelForeColor = System.Drawing.Color.White;
+            series1.Legend = "Legend1";
+            series1.Name = "Summoner1";
+            series2.ChartArea = "Summoner1";
+            series2.Legend = "Legend1";
+            series2.Name = "Summoner2";
+            this.chart1.Series.Add(series1);
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(542, 228);
             this.chart1.TabIndex = 24;
             this.chart1.Text = "chart1";
@@ -249,7 +249,7 @@
             this.leftKDAcolor.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.leftKDAcolor.Font = new System.Drawing.Font("FrizQuadrata BT", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.leftKDAcolor.ForeColor = System.Drawing.SystemColors.Menu;
-            this.leftKDAcolor.Location = new System.Drawing.Point(56, 398);
+            this.leftKDAcolor.Location = new System.Drawing.Point(17, 373);
             this.leftKDAcolor.Name = "leftKDAcolor";
             this.leftKDAcolor.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.leftKDAcolor.Size = new System.Drawing.Size(264, 49);
@@ -262,7 +262,7 @@
             this.rightKDAcolor.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rightKDAcolor.Font = new System.Drawing.Font("FrizQuadrata BT", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rightKDAcolor.ForeColor = System.Drawing.SystemColors.Menu;
-            this.rightKDAcolor.Location = new System.Drawing.Point(486, 398);
+            this.rightKDAcolor.Location = new System.Drawing.Point(788, 373);
             this.rightKDAcolor.Name = "rightKDAcolor";
             this.rightKDAcolor.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.rightKDAcolor.Size = new System.Drawing.Size(261, 49);
@@ -276,7 +276,7 @@
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(145, 365);
+            this.label5.Location = new System.Drawing.Point(106, 340);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(63, 22);
             this.label5.TabIndex = 27;
@@ -289,7 +289,7 @@
             this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(584, 365);
+            this.label6.Location = new System.Drawing.Point(886, 340);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(63, 22);
             this.label6.TabIndex = 28;
@@ -432,7 +432,7 @@
             "Ziggs",
             "Zilean",
             "Zyra"});
-            this.champBox1.Location = new System.Drawing.Point(342, 239);
+            this.champBox1.Location = new System.Drawing.Point(466, 159);
             this.champBox1.Name = "champBox1";
             this.champBox1.Size = new System.Drawing.Size(121, 21);
             this.champBox1.TabIndex = 29;
@@ -447,7 +447,7 @@
             this.label7.Font = new System.Drawing.Font("FrizQuadrata BT", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Snow;
             this.label7.Image = global::LeagueForm.Properties.Resources.background2;
-            this.label7.Location = new System.Drawing.Point(51, 9);
+            this.label7.Location = new System.Drawing.Point(180, 10);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(698, 79);
             this.label7.TabIndex = 30;
@@ -461,7 +461,7 @@
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BackgroundImage = global::LeagueForm.Properties.Resources.bg4;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(824, 801);
+            this.ClientSize = new System.Drawing.Size(1064, 1041);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.champBox1);
             this.Controls.Add(this.label6);
