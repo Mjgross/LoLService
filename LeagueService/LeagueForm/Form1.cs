@@ -21,6 +21,12 @@ namespace LeagueForm
         public Form1()
         {
             InitializeComponent();
+
+            //transparency setup
+            //label2.Parent = pictureBox1;
+            label2.BackColor = Color.Transparent;
+           // label3.Parent = pictureBox2;
+            label3.BackColor = Color.Transparent;
         }
 
 
@@ -228,6 +234,11 @@ namespace LeagueForm
             {
                 MessageBox.Show("Error: Summoner Data not found.");
             }
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
 
         }
     }

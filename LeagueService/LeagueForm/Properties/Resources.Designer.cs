@@ -109,5 +109,25 @@ namespace LeagueForm.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap leagueFont {
+            get {
+                object obj = ResourceManager.GetObject("leagueFont", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ufonts_com_friz_quadrata_bt {
+            get {
+                object obj = ResourceManager.GetObject("ufonts_com_friz_quadrata_bt", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
     }
 }
