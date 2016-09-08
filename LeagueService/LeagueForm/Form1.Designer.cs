@@ -53,6 +53,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.champBox1 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.recentTableL = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -195,22 +197,26 @@
             // 
             // leftKDA
             // 
-            this.leftKDA.AutoSize = true;
+            this.leftKDA.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.leftKDA.Font = new System.Drawing.Font("Arial Rounded MT Bold", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.leftKDA.Location = new System.Drawing.Point(129, 450);
+            this.leftKDA.Location = new System.Drawing.Point(17, 450);
             this.leftKDA.Name = "leftKDA";
-            this.leftKDA.Size = new System.Drawing.Size(0, 43);
+            this.leftKDA.Size = new System.Drawing.Size(264, 43);
             this.leftKDA.TabIndex = 16;
+            this.leftKDA.Text = "l";
+            this.leftKDA.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // rightKDA
             // 
-            this.rightKDA.AutoSize = true;
+            this.rightKDA.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.rightKDA.Font = new System.Drawing.Font("Arial Rounded MT Bold", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rightKDA.Location = new System.Drawing.Point(574, 450);
+            this.rightKDA.Location = new System.Drawing.Point(788, 450);
             this.rightKDA.Name = "rightKDA";
             this.rightKDA.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.rightKDA.Size = new System.Drawing.Size(0, 43);
+            this.rightKDA.Size = new System.Drawing.Size(260, 43);
             this.rightKDA.TabIndex = 20;
+            this.rightKDA.Text = "l";
+            this.rightKDA.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // chart1
             // 
@@ -227,7 +233,7 @@
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(274, 563);
+            this.chart1.Location = new System.Drawing.Point(360, 428);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
             series1.ChartArea = "Summoner1";
@@ -239,12 +245,13 @@
             series2.Name = "Summoner2";
             this.chart1.Series.Add(series1);
             this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(542, 228);
+            this.chart1.Size = new System.Drawing.Size(347, 120);
             this.chart1.TabIndex = 24;
             this.chart1.Text = "chart1";
             // 
             // leftKDAcolor
             // 
+            this.leftKDAcolor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.leftKDAcolor.BackColor = System.Drawing.Color.DimGray;
             this.leftKDAcolor.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.leftKDAcolor.Font = new System.Drawing.Font("FrizQuadrata BT", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -258,6 +265,7 @@
             // 
             // rightKDAcolor
             // 
+            this.rightKDAcolor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rightKDAcolor.BackColor = System.Drawing.Color.DimGray;
             this.rightKDAcolor.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rightKDAcolor.Font = new System.Drawing.Font("FrizQuadrata BT", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -454,6 +462,34 @@
             this.label7.Text = "League Stat Comparer";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(476, 102);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(64, 17);
+            this.checkBox1.TabIndex = 31;
+            this.checkBox1.Text = "DEBUG";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // recentTableL
+            // 
+            this.recentTableL.ColumnCount = 4;
+            this.recentTableL.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.recentTableL.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.recentTableL.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.recentTableL.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.recentTableL.Location = new System.Drawing.Point(17, 577);
+            this.recentTableL.Name = "recentTableL";
+            this.recentTableL.RowCount = 4;
+            this.recentTableL.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.recentTableL.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.recentTableL.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.recentTableL.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.recentTableL.Size = new System.Drawing.Size(361, 214);
+            this.recentTableL.TabIndex = 32;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -462,6 +498,8 @@
             this.BackgroundImage = global::LeagueForm.Properties.Resources.bg4;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1064, 1041);
+            this.Controls.Add(this.recentTableL);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.champBox1);
             this.Controls.Add(this.label6);
@@ -519,6 +557,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox champBox1;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.TableLayoutPanel recentTableL;
     }
 }
 

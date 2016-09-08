@@ -25,12 +25,13 @@ namespace GetChamps
             string summon = getSummoner(username);
             var summonData = JsonConvert.DeserializeObject<Dictionary<string, Summoner>>(summon);
 
-            list.Add(summon);                                   //0
-            list.Add(getMastery(summonData.First().Value.id));  //1
-            list.Add(getRunes(summonData.First().Value.id));    //2
-            list.Add(getChampRanked(summonData.First().Value.id));    //3
-            list.Add(getRecent(summonData.First().Value.id)); //4
-
+            //Adding to the list                                    List ID VALUE
+            list.Add(summon);                                           //0
+            list.Add(getMastery(summonData.First().Value.id));          //1
+            list.Add(getRunes(summonData.First().Value.id));            //2
+            list.Add(getChampRanked(summonData.First().Value.id));      //3
+            list.Add(getRecent(summonData.First().Value.id));           //4
+            //list.Add(getmatchlist(summonData.First().Value.id));        //5
 
             return list;
         }
@@ -85,6 +86,28 @@ namespace GetChamps
             string returner = req.requester(url);
             return returner;
         }
+
+        public string getmatchlist(long id)
+        {
+            Request req = new Request();
+            string url = apiLinks.root + apiLinks.matchlistURL + apiLinks.api_key;
+            string idString = id.ToString();
+            url = String.Format(url, idString);
+            string returner = req.requester(url);
+            return returner;
+        }
+
+        /*
+        public string getmatch(long id) //max 15 per request
+        {
+            Request req = new Request();
+            string url = apiLinks.root + apiLinks.recentURL + apiLinks.api_key;
+            string idString = id.ToString();
+            url = String.Format(url, idString);
+            string returner = req.requester(url);
+            return returner;
+        }
+        */
 
     }
 }

@@ -9,7 +9,7 @@ namespace LeagueForm
     public class RecentGames
     {
         [JsonProperty("games")]
-        List <Game> Game {get;set;}
+        List<Game> Games {get;set;}
 
         [JsonProperty("summonerId")]
         public long summonerId { get; set; }
@@ -33,8 +33,8 @@ namespace LeagueForm
         [JsonProperty("gameMode")]
         public string gameMode { get; set; }
 
-        [JsonProperty("gameType")]
-        public int gameType { get; set; }
+        //[JsonProperty("gameType")]
+        //public int gameType { get; set; }
 
         [JsonProperty("invalid")]
         public Boolean invalid { get; set; }
@@ -55,7 +55,7 @@ namespace LeagueForm
         public int spell2 { get; set; }
 
         [JsonProperty("stats")]
-        public List<RawStats> Rawstats { get; set; }
+        public RawStats Rawstats { get; set; }
 
         [JsonProperty("subType")]
         public string subType { get; set; }
@@ -138,5 +138,46 @@ namespace LeagueForm
 
         [JsonProperty("itemsPurchased")]
         public int itemsPurchased{ get; set; }
+
+        [JsonProperty("killingSprees")]
+        public int killingSprees { get; set; }
+
+        [JsonProperty("largestCriticalStrike")]
+        public int largestCriticalStrike { get; set; }
+
+        [JsonProperty("largestMultiKill")]
+        public int largestMultiKill { get; set; }
+
+        [JsonProperty("legendaryItemsCreated")]
+        public int legendaryItemsCreated { get; set; }
+
+        [JsonProperty("level")]
+        public int level { get; set; }
+
+        [JsonProperty("magicDamageDealtPlayer")]
+        public int magicDamageDealtPlayer { get; set; }
+
+        [JsonProperty("magicDamageDealtToChampions")]
+        public int magicDamageDealtToChampions { get; set; }
+
+        [JsonProperty("magicDamageTaken")]
+        public int magicDamageTaken { get; set; }
+
+        [JsonProperty("minionsDenied")]
+        public int minionsDenied { get; set; }
+
+        [JsonProperty("minionsKilled")]
+        public int minionsKilled { get; set; }
+
+        [JsonProperty("neutralMinionsKilled")]
+        public int neutralMinionsKilled { get; set; }
+
+        [JsonProperty("neutralMinionsKilledEnemyJungle")]
+        public int neutralMinionsKilledEnemyJungle { get; set; }
+
+        [JsonProperty("neutralMinionsKilledYourJungle")]
+        public int neutralMinionsKilledYourJungle { get; set; }
+
+
     }
 }
