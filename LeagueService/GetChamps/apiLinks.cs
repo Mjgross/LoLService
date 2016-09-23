@@ -11,7 +11,7 @@ namespace GetChamps
         //1 -> championID
 
         //root
-        public const string root                = "";
+        public const string root                = "https://na.api.pvp.net/api/lol/na";
 
         //Access Links for all of the APIs
         public const string api_key             = "?api_key=RGAPI-F8054BA6-CF6D-4C86-990E-ED29A8836C37";

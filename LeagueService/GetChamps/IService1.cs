@@ -8,7 +8,7 @@ using System.Text;
 
 namespace GetChamps
 {
-    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IService1" in both code and config file together.
+    //Service that calls the League API and returns the data in a list format 
     [ServiceContract]
     public interface IService1
     {
@@ -17,7 +17,7 @@ namespace GetChamps
         [WebGet(ResponseFormat = WebMessageFormat.Json,
             UriTemplate = "/update/{name}")]
         List<string> update(string username);
-        // TODO: Add your service operations here
+
     }
 
     [DataContract]
