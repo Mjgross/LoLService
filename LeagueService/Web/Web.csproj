@@ -391,7 +391,7 @@
     <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AggregatedStats.cs" />
+    <Compile Include="Json\AggregatedStats.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -403,7 +403,7 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="Champions.cs" />
+    <Compile Include="Json\Champions.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -422,11 +422,11 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="mysql.cs" />
+    <Compile Include="Source\mysql.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Ranked.cs" />
-    <Compile Include="RecentGames.cs" />
-    <Compile Include="RunePages.cs" />
+    <Compile Include="Json\Ranked.cs" />
+    <Compile Include="Json\RecentGames.cs" />
+    <Compile Include="Json\RunePages.cs" />
     <Compile Include="Service References\ServiceReference1\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -447,8 +447,8 @@
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
-    <Compile Include="Summoner.cs" />
-    <Compile Include="updateDB.cs" />
+    <Compile Include="Json\Summoner.cs" />
+    <Compile Include="Source\updateDB.cs" />
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

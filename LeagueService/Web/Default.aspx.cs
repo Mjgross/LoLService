@@ -43,11 +43,9 @@ namespace Web
                 //DATABASE LOAD
                 else
                 {
-
+                    updateDB database = new updateDB();
+                    database.AddSummonerToDB(userName);
                 }
-                //userName
-           
-                //LOAD FROM DATABASE
 
             }
         }
