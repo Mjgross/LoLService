@@ -22,6 +22,7 @@
       height:100px;
     }
 
+    /*creates "space" for inbetween the header and the rest of the content*/
     .spacer {
         width:100%;
         height:95px;
@@ -72,9 +73,12 @@
             .colCol {
                 background-color:darkgray;
                 font-family: 'Baloo Tamma';
-                font-size: 20px;
-                font: 32px 'Baloo Tamma', tahoma, arial, helvetica, sans-serif;
+                font: 20px 'Baloo Tamma', tahoma, arial, helvetica, sans-serif;
                 white-space: nowrap;
+                position:center;
+                padding-top:20px;
+                color:steelblue;
+                letter-spacing: 4px;
 
             }
             .header-pipe{
@@ -93,23 +97,38 @@
                 display: block;
                 margin:0 auto;
                 position: absolute;
-                top: -40px;
+                top: -50px;
                 left:5%;
 
 
             }
+
+            /*Container for the header*/
             .navCol {
                 background-color:gray;
                 padding:2px;
                 border:2px solid black;
-                top: 10px;
-
-
             }
+
             .bg{
-                background-image:url('images/bg.jpg');
+                background-image: url('images/bg.jpg');/* W3C */
                 background-repeat:repeat-y;
-                background-position: center;                 
+                background-position: center;  
+                background-size: cover;  
+                vertical-align:bottom;       
+                min-height:100%;      
+                min-width:100%;
+                position:absolute;
+
+                background-attachment: fixed;
+                
+                               
+                 background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('images/bg.jpg');
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.65))), url('images/bg.jpg');
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('images/bg.jpg');
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('images/bg.jpg') ;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('images/bg.jpg');
+
             }
 
             .bodyContent{
@@ -118,46 +137,35 @@
                 padding:5px;
                 border:thick;
                 border-color:aliceblue;
+                
  
             }
+.add-on .input-group-btn > .btn {
+  border-left-width:0;left:-2px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
+
+/* stop the glowing blue shadow */
+.add-on .form-control:focus {
+ box-shadow:none;
+ -webkit-box-shadow:none; 
+ border-color:#cccccc; 
+}
+.form-control{width:20%}
+.navbar-nav > li > a {
+  border-right: 1px solid #ddd;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+
   </style>
 
 
 </head>
 <body>
-    <!--
-      <div class="container">
 
-          <div class="navCol col-lg-4">
-              <div class="container">
-                  <div class="colCol">
-                      <a href="#">Users</a>
-                      <span class="header-pipe">|</span>
-                      <a href="#">Users</a>
-                      <span class="header-pipe">|</span>
-                      <a href="#">Users</a>
-
-                  </div>
-              </div>
-          </div>
-          <div class="navCol col-lg-4">
-              <div class="header-back">
-                  <div class="header-logo">
-                      <img src="~/Images/mainIcon.png" runat="server" href="/" />
-                  </div>
-              </div>
-
-          </div>
-          <div class="navCol col-lg-4">
-              <div class="input-group-btn">
-                  <input type="text" class="form-control" placeholder="Search">
-                  <button class="btn btn-default" type="submit">
-                      <i class="glyphicon glyphicon-search"></i>
-                  </button>
-              </div>
-          </div>
-      </div> -->
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
@@ -165,31 +173,43 @@
             <div class="navbar" id="myNavbar">
                 <div class="nav navbar-nav">
 
-                    <div class="container">
-                        <div class="navCol col-lg-4">
-                            <div class="colCol">
-                                <a href="#">Users</a>
-                                <span class="header-pipe">|</span>
-                                <a href="#">Champions</a>
-                                <span class="header-pipe">|</span>
-                                <a href="#">Users</a>
-                            </div>
-                        </div>
-                        <div class="navCol col-lg-4">
-                            <div class="header-logo">
-                                <img src="~/images/mainIcon.png" runat="server" width="320" height="210" />
-                            </div>
+                        <div class="container">
+                            <div class="navCol col-lg-4 visible-lg">
+                                <div class="colCol">
 
-                        </div>
-                        <div class="navCol col-lg-4">
-                            <div class="input-group-btn">
-                                <input type="text" class="form-control" placeholder="Search" />
-                                <button class="btn btn-default" type="submit">
-                                    <i class="glyphicon glyphicon-search"></i>
-                                </button>
+                              
+                                    <a href="#">Users</a>
+ 
+                       
+                                    <a href="#">Champions</a>
+                               
+
+                                    <a href="#">Users</a>
+                                </div>
+                            </div>
+                            <div class="navCol col-md-4 hidden-lg visible-md ">
+                                <ul class="force left"></ul>
+                            </div>
+                            <div class="navCol col-lg-4 col-md-2">
+                                <div class="header-logo">
+                                    <img src="~/images/mainIcon.png" runat="server" width="300" height="200" />
+                                </div>
+
+                            </div>
+                            <div class="navCol col-lg-4 col-md-2 visible-lg">
+                                <form class="navbar-form" role="search">
+                                    <div class="input-group add-on">
+                                        <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+
                             </div>
                         </div>
-                    </div>
+
+                    
 
 
                 </div>
@@ -219,6 +239,9 @@
                         </asp:ContentPlaceHolder>
                         <hr />
                     </div>
+                    <footer class="container-fluid text-center">
+                        <p>Footer Text</p>
+                    </footer>
                 </div>
                 <div class="col-lg-1"></div>
                 <div class="col-lg-1">
@@ -234,9 +257,5 @@
         </div>
     </div>
 
-
-    <footer class="container-fluid text-center">
-        <p>Footer Text</p>
-    </footer>
 </body>
 </html>
