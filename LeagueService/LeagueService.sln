@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetChamps", "GetChamps\GetChamps.csproj", "{97544938-B7F8-491A-A55E-D31A963B8EB5}"
 EndProject
@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{1
 	ProjectSection(ProjectDependencies) = postProject
 		{97544938-B7F8-491A-A55E-D31A963B8EB5} = {97544938-B7F8-491A-A55E-D31A963B8EB5}
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Site", "Site\Site.csproj", "{C6C4DFB0-D000-4258-B735-08953C62A361}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{1E3E3F12-5E42-4A8E-8E77-9FEA1ED2E1F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E3E3F12-5E42-4A8E-8E77-9FEA1ED2E1F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E3E3F12-5E42-4A8E-8E77-9FEA1ED2E1F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6C4DFB0-D000-4258-B735-08953C62A361}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6C4DFB0-D000-4258-B735-08953C62A361}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6C4DFB0-D000-4258-B735-08953C62A361}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6C4DFB0-D000-4258-B735-08953C62A361}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
