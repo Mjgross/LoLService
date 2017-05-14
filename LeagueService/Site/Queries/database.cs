@@ -16,8 +16,8 @@ namespace Site.Queries
             string myConnectionString;
 
             // myConnectionString = "server=127.0.0.1;uid=root;" +
-            // "pwd='';database=test;";
-            myConnectionString = "Server=localhost; database=league; UID=root; password=''";
+            // "pwd=;database=test;";
+            myConnectionString = "Server=localhost; database=league; UID=root; password=";
             try
             {
                 conn.ConnectionString = myConnectionString;
@@ -30,6 +30,11 @@ namespace Site.Queries
                 conn.Close();
             }
             return null;
+        }
+
+        public bool updateSummoner(String summoner)
+        {
+            return false;
         }
     }
 }

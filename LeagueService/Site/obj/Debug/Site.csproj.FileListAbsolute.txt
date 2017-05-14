@@ -65,3 +65,5 @@ C:\Users\Matt\Documents\Github\LoLService\LeagueService\Site\obj\Debug\Site.cspr
 C:\Users\Matt\Documents\Github\LoLService\LeagueService\Site\obj\Debug\Site.dll
 C:\Users\Matt\Documents\Github\LoLService\LeagueService\Site\obj\Debug\Site.pdb
 C:\Users\Matt\Documents\Github\LoLService\LeagueService\Site\bin\MySql.Data.dll
+C:\Users\Matt\Documents\Github\LoLService\LeagueService\Site\bin\Newtonsoft.Json.dll
+C:\Users\Matt\Documents\Github\LoLService\LeagueService\Site\bin\Newtonsoft.Json.xml

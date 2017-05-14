@@ -19,13 +19,14 @@ namespace GetChamps
     public class Service1 : IService1
     {
 
-        public List<string> update(string username)
+        public Summoner update(string username)
         {
             Main setup = new Main();
-            List<string> list = new List<string>();
-            list = setup.Controller(username);
+            //List<string> list = new List<string>();
+            Summoner summonData = new Summoner();
+            summonData = setup.Controller(username);
 
-            return list;
+            return summonData;
         }
 
     }

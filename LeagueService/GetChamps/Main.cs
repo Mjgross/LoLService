@@ -9,33 +9,33 @@ namespace GetChamps
     {
         private string username;
 
-        public List<string> Controller(string username)
+        public Summoner Controller(string username)
         {
             List<string> list = new List<string>();
             //sets class username for data gathering
             this.username = username.Replace(" ", "");
             //Grab all Summoner Information
-            list = GrabSummonerInfo(list);
-            return list;
+            Summoner summonData = GrabSummonerInfo(list);
+            return summonData;
         }
-        
-        private List<string> GrabSummonerInfo(List<string> list)
+
+        private Summoner GrabSummonerInfo(List<string> list)
         {
             //Summoner ID for adding to list
             string summon = getSummoner(username);
-            var summonData = JsonConvert.DeserializeObject<Dictionary<string, Summoner>>(summon);
+            Summoner summonData = JsonConvert.DeserializeObject<Summoner>(summon);
 
             //Adding to the list                                    List ID VALUE
             list.Add(summon);                                           //0
-            list.Add(getMastery(summonData.First().Value.id));          //1
-            list.Add(getRunes(summonData.First().Value.id));            //2
-            list.Add(getChampRanked(summonData.First().Value.id));      //3
-            list.Add(getRecent(summonData.First().Value.id));           //4
-            //list.Add(getmatchlist(summonData.First().Value.id));        //5
+                                                                        // list.Add(getMastery(summonData.First().Value.id));          //1
+                                                                        // list.Add(getRunes(summonData.First().Value.id));            //2
+                                                                        // list.Add(getChampRanked(summonData.First().Value.id));      //3
+                                                                        //list.Add(getRecent(summonData.First().Value.id));           //4
+                                                                        //list.Add(getmatchlist(summonData.First().Value.id));        //5
 
-            return list;
+            return summonData;
         }
-        
+
 
         //Grabs Summoner API URL
         public string getSummoner(string username)

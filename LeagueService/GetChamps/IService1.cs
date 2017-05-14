@@ -15,8 +15,8 @@ namespace GetChamps
 
         [OperationContract]
         [WebGet(ResponseFormat = WebMessageFormat.Json,
-            UriTemplate = "/update/{name}")]
-        List<string> update(string username);
+            UriTemplate = "/summoner/{name}")]
+        Summoner update(string username);
 
     }
 
@@ -24,8 +24,8 @@ namespace GetChamps
     public class SummonerData
     {
         [DataMember]
-        List<string>summonerData { get; set; }
-        
+        List<string> summonerData { get; set; }
+
 
     }
 

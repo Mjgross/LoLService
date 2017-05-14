@@ -6,7 +6,7 @@ using Newtonsoft.Json;
 namespace GetChamps
 {
     public class Summoner
-    {   
+    {
         internal Summoner() { }
 
         [JsonProperty(PropertyName = "id")]
