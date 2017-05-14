@@ -13,6 +13,15 @@ namespace Site {
     public partial class Site1 {
         
         /// <summary>
+        /// srch-term control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText srch-term;
+        
+        /// <summary>
         /// MainContent control.
         /// </summary>
         /// <remarks>
