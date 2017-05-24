@@ -237,11 +237,11 @@
                 </div>
                 <div class="col-lg-1"></div>
                 <div class="bodyContent col-lg-8 text-left">
-                    <div class="container body-content">
+
                         <asp:ContentPlaceHolder ID="MainContent" runat="server">
                         </asp:ContentPlaceHolder>
                         <hr />
-                    </div>
+
                     <footer class="container-fluid text-center">
                         <p>Footer Text</p>
                     </footer>
